@@ -29,7 +29,7 @@ int main()
 {
   Sprite balle;
 
-  init_balle (balle, 17, 8, 0.5, 0.9);
+  init_balle (balle, 17, 8, 1.2, 0.8);
   /* La balle est a ligne 17, colonne 8, vitesse verticale = 1.2, vitesse horizontale = 0.8
      Il faut choisir les valeurs differentes pour dx & dy pour que la balle suive un trajectoire aleatoire, sinon
      elle se deplace toujours selon un trajectoire fixe (dx = dy --> 1 carre) */
