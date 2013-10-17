@@ -28,7 +28,7 @@ bool touche_appuyee();
 
 void init_element (Sprite & s, double x, double y, double dx, double dy);
 void cadre ();
-void affichage_screen ();
+void affichage_screen (); // OL: plutot affichage_ecran pour ne pas mélanger Francais et Anglais
 void mouvement_balle (Sprite & s);
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -42,11 +42,15 @@ int main()
   init_element (balle, 17, 8, 0.7, 0.5);
 
 
-  Sprite gallet[LARGEUR]; 
+  Sprite gallet[LARGEUR];
+  //OL: en fait, tu n'as pas besoin de plusieurs Sprite. Il suffit d'un sprite avec les coordonnées du centre du gallet
+  // ensuite, tu faire une fonction spéciale pour mettre tous les caratères du gallet dans screen
   for (int k = 0 ; k < LARGEUR ; k++)
-    { gallet[0].y = 1;
+    { 
+      gallet[0].y = 1;
       gallet[k + 1].y = gallet[k].y + 1;
-      init_element (gallet[k], 20, gallet[k].y, 0, 0); } // la boucle FOR pour les valeurs gallet[k].y pour que 
+      init_element (gallet[k], 20, gallet[k].y, 0, 0); 
+    } // la boucle FOR pour les valeurs gallet[k].y pour que 
                                                          // 10 '=' soient affiches successivement sur l'horizontal
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -54,7 +58,7 @@ int main()
                         /* CONTROLER LE MOUVEMENT DU GALLET A L'AIDE DU CLAVIER */
 
   for (int t = 0 ; ; t++)
-    { system ("stty raw");
+    { system ("stty raw");   // OL: Utilise code_touche dans goutte.cpp
       usleep (40 * 1000);
 	  
       if (touche_appuyee()) 
@@ -159,7 +163,8 @@ void affichage_screen()
 
 
 void mouvement_balle(Sprite & s) 
-{ s.x += s.dx;  
+{ 
+  s.x += s.dx;  
   s.y += s.dy; 
   
   if (s.x > LIGNE - 2)   
@@ -172,15 +177,18 @@ void mouvement_balle(Sprite & s)
     s.dx =  0.7;
 
   if (s.y < 1)
-    s.dy =  0.5; }
+    s.dy =  0.5; 
+}
 
 
 bool touche_appuyee () 
-{ struct timeval tv;
+{ 
+  struct timeval tv;
   fd_set fds;
   tv.tv_sec = 0;
   tv.tv_usec = 0;
   FD_ZERO(&fds);
   FD_SET(STDIN_FILENO, &fds);
   select(STDIN_FILENO+1, &fds, NULL, NULL, &tv);
-  return (FD_ISSET(0, &fds)); }
+  return (FD_ISSET(0, &fds)); 
+}
