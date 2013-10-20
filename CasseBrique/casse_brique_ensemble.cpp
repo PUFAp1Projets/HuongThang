@@ -31,7 +31,7 @@ typedef struct
 
 typedef struct
 { int a;
-  int b[LAR_BRI];
+  int b[LAR_BRI];          // tableau pour regrouper les caracteres H : 6 H forment 1 brique "HHHHHH"   
   bool presente; } Block;  // pour les briques
 
 /**************************************************************************************************************/
@@ -62,16 +62,19 @@ int main()
       init_element (gallet[k], 20, gallet[k].y, 0, 0); }
 
 
-  Block brique[LIG_BRI][C_BRI];
+  Block brique[LIG_BRI][C_BRI]; // tableau de 2 dimensions pour afficher les briques sur les lignes & les colonnes
   for (int m = 0 ; m < LIG_BRI ; m++)
     for (int n = 0 ; n < C_BRI ; n++)
       { 
-	brique[m][n].a = m + 2;
+	brique[m][n].a = m + 2; 
 	for (int e = 0 ; e < LAR_BRI ; e++)
-	  { brique[m][n].presente = true;
-	    brique[m][n].b[e] = 8*n + 2 + e; }  
+	  { brique[m][n].presente = true; 
+	    brique[m][n].b[e] = 8*n + 2 + e; }// le coefficient (8) decide la distance entre les colonnes de briques  
       }      
-  
+  // la premiere brique sera affichee aux coordonnees (2;2)
+
+
+
 /**************************************************************************************************************/
 
                                    /* CONTROLER LE GALLET AVEC LE CLAVIER */
@@ -132,13 +135,13 @@ int main()
 	  for (int e = 0 ; e < LAR_BRI ; e++)
 	    if (   (int) balle.x + 1 == brique[m][n].a  
 		   && (int) balle.y == brique[m][n].b[e] 
-		   && brique[m][n].presente == true)
+		   && brique[m][n].presente == true) 
 
 	      { balle.dx = BALLE_DX;        // la balle rebondit
 		brique[m][n].presente = false; } 
 	
       // balle_brique (brique[LIG_BRI][C_BRI], balle); 
-      // Nous avons essaye a utiliser une fonction pour rendre les codes plus clairs, mais elle ne marche pas :(
+      // Nous avons essaye a utiliser cette fonction pour rendre les codes plus clairs, mais elle ne marche pas :(
 
 
       for (int m = 0 ; m < LIG_BRI ; m++)
@@ -146,7 +149,7 @@ int main()
 	  for (int e = 0 ; e < LAR_BRI ; e++)
 	    if (brique[m][n].presente)  
 	      ecran[brique[m][n].a][brique[m][n].b[e]] = 'H'; 
-      // afficher seulement les briques qui ne touchent pas encore la balle
+      // afficher seulement les briques que la balle ne touchent pas encore
 	
 	
       affichage_ecran(); 
