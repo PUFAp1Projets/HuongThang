@@ -1,0 +1,50 @@
+img.button1 {
+    position: absolute;
+    top: 345px;
+    left: 460px;    
+}
+
+
+a {
+    font-size: 55px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img.button1 + a:hover {
+    text-decoration: underline;
+    color: #0B0B61; 
+}
+
+img.button2 + a:hover {
+    text-decoration: underline;
+    color: #0B0B61;
+}
+
+img.button1 + a {
+    position: absolute;
+    top: 375px;
+    left: 505px;
+    color: #21610B;
+}
+
+img.button2 + a {
+    position: absolute;
+    top: 480px;
+    left: 540px;
+    color: #F7FE2E;
+}
+
+img.button2 {
+    position: absolute;
+    top: 470px;
+    left: 440px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/background.png) top center;
+}

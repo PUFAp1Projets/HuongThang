@@ -1,6 +1,4 @@
-*****************************************************************************************
-
--------------------------------- LE PROJET JEU PING PONG --------------------------------
+--- LE PROJET JEU PING PONG --- 
 
 *****************************************************************************************
 
@@ -34,7 +32,6 @@ II. PRESENTATION DU PROJET :
 
     3) La regle du jeu :
     - Le theme : Noel
-    - Dans le cadre, se deplace une balle dont la vitesse augmente automatiquement toutes les 15 secondes. Les joueurs doivent controler les gallets de maniere que la balle ne touche pas les murs verticales. Si cela se produit, un des jouers recoit 1 point. Apres 3 tours, le jeu termine et le resultat (qui gagne, qui perd) s'affiche sur l'ecran.
+    - Dans le cadre, se deplace une balle dont la vitesse augmente automatiquement toutes les 15 secondes. Les joueurs doivent controler les gallets de maniere que la balle ne touche pas les murs verticales. Si cele se produit, un des jouers recoit 1 point. Apres 3 tours, le jeu termine et le resultat (qui gagne, qui perd) s'affiche sur l'ecran.
     
 
-*****************************************************************************************

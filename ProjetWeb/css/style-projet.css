@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/pattern4.png) repeat;
+    max-width: 1200px;
+}
+
+/******************************************************/
+
+#menu-bar {
+    width: 420px;
+    height: 1500px;
+    float: left;
+    background: url(../images/menu-bar.png) no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#menu-bar ul.big {
+    position: fixed;
+    top: 280px;
+    left: 25px;
+    list-style: none;
+    font-size: 37px;
+    font-weight: bold;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+#menu-bar ul.big > li {
+    height: 50px;
+    width: 290px; 
+    margin-top: 15px;
+    border-bottom: 2px dotted black;
+    text-align: center;
+}
+
+#menu-bar ul.big li div {
+    position: relative;
+    top: -80px;
+    left: 290px;
+    display: none;
+    font-size: 30px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: white;
+}
+
+#menu-bar ul.big li div.auteur {
+    width: 365px;
+}
+
+#menu-bar ul.big li div.presentation {
+    width: 200px;
+}
+
+#menu-bar ul.big li:hover div {
+    display: block;
+}
+
+#menu-bar a {
+    text-decoration: none;
+    color: #0B610B;
+}
+
+#menu-bar a:hover {
+    text-decoration: underline;
+    color: #6A0888;
+}
+
+/******************************************/
+
+#content {
+    float: left;
+    width: 650px;    
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #2E2E2E;
+}
+
+#content h2 {
+    font-family: URW Chancery L, cursive;
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+#content div.upper {
+    background: url(../images/upper.png) no-repeat;
+    height: 269px;
+}
+
+#content div.middle {
+    background: url(../images/middle.png) repeat-y;    
+}
+
+#content div.middle p {
+    margin: 0;
+    padding: 25px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#content div.bottom {
+    background: url(../images/bottom.png);
+    height: 98px;
+    margin: 0;    
+}

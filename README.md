@@ -1,31 +1,16 @@
 HuongThang
 =============================================================================================================
 
-- 15/10 : Deposer le resultat pour la Question 1 (Balle)
-  	  Le nom du fichier : casse_brique_balle.cpp (seulement la balle)
+*** LES PROJETS DE LA PROGRAMMATION EN C++ :
+
+- Le jeu Casse Brique (folder CasseBrique) : les codes sont ecrits en C++ et le programme marche sur Terminal.
+
+- Le jeu Ping Pong (folder PingPong) : les codes sont ecrits en C++, avec une plus belle presentation graphique a l'aide de SDL, le programme marche sur Terminal.
 
 
-- 17/10 : Deposer le resultat pour la Question 2 (Gallet)
-  	  Le nom du fichier : casse_brique_gallet.cpp (meme la balle & le gallet)
+*** LES PROJETS DE WEB :
 
-
-Nous esperons recevoir vos commentaires sur ce projet pour qu'il soit mieux programme. Nous vous remercions beaucoup :) !  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Creer un site web qui presente le jeu Ping Pong programme par chaque groupe (dans le projet de C++)
 
 =============================================================================================================
 Projet de Le Nguyen Minh Huong et de Tran Trung Thang
