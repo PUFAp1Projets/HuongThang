@@ -1,15 +1,15 @@
 img.button1 {
     position: absolute;
-    top: 345px;
+    top: 325px;
     left: 460px;    
 }
-
 
 a {
     font-size: 55px;
     font-family: "Lucida Console", Monaco, monospace;
     font-weight: bold;
     text-decoration: none;
+    text-shadow: 3px 3px 2px black;
 }
 
 img.button1 + a:hover {
@@ -24,27 +24,27 @@ img.button2 + a:hover {
 
 img.button1 + a {
     position: absolute;
-    top: 375px;
+    top: 355px;
     left: 505px;
     color: #21610B;
 }
 
 img.button2 + a {
     position: absolute;
-    top: 480px;
+    top: 460px;
     left: 540px;
     color: #F7FE2E;
 }
 
 img.button2 {
     position: absolute;
-    top: 470px;
+    top: 450px;
     left: 440px;
 }
-
 
 body {
     margin: 0;
     padding: 0;
     background: url(../images/background.png) top center;
+    background-size: 900px 800px;
 }
