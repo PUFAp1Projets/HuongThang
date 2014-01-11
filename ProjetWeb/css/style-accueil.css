@@ -1,15 +1,31 @@
-img.button1 {
-    position: absolute;
-    top: 325px;
-    left: 460px;    
+/*****************--- DESIGN GENERAL ---***************/
+
+@font-face {
+    font-family: Button;
+    src: url(../font/Abril.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/background.png) top center;
+    background-size: 900px 800px;
 }
 
 a {
     font-size: 55px;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: Button;
     font-weight: bold;
     text-decoration: none;
     text-shadow: 3px 3px 2px black;
+}
+
+/***************--- LE BOUTON "PROJET" ---*************/
+
+img.button1 {
+    position: absolute;
+    top: 325px;
+    left: 460px;    
 }
 
 img.button1 + a:hover {
@@ -17,21 +33,23 @@ img.button1 + a:hover {
     color: #0B0B61; 
 }
 
+img.button1 + a {
+    position: absolute;
+    top: 365px;
+    left: 505px;
+    color: #21610B;
+}
+
+/***************--- LE BOUTON "GITHUB" ---*************/
+
 img.button2 + a:hover {
     text-decoration: underline;
     color: #0B0B61;
 }
 
-img.button1 + a {
-    position: absolute;
-    top: 355px;
-    left: 505px;
-    color: #21610B;
-}
-
 img.button2 + a {
     position: absolute;
-    top: 460px;
+    top: 470px;
     left: 540px;
     color: #F7FE2E;
 }
@@ -42,9 +60,3 @@ img.button2 {
     left: 440px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: url(../images/background.png) top center;
-    background-size: 900px 800px;
-}

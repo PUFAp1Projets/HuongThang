@@ -1,3 +1,23 @@
+@font-face {
+    font-family: fontContent;
+    src: url(../font/goudy.otf);
+}
+
+@font-face {
+    font-family: fontDecor;
+    src: url(../font/sofia.otf);
+}
+
+@font-face {
+    font-family: fontMenu;
+    src: url(../font/garden.ttf);
+}
+
+@font-face {
+    font-family: fontFooter;
+    src: url(../font/Satisfaction.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +25,7 @@ body {
     max-width: 1200px;
 }
 
-/******************************************************/
+/*********************--- MENUBAR ---*******************/
 
 #menu-bar {
     margin-left: 25px;
@@ -13,7 +33,7 @@ body {
     height: 1500px;
     background: url(../images/menu-bar.png) no-repeat;
     position: fixed;
-    top: -35px;
+    top: -40px;
 }
 
 div.parent {
@@ -23,13 +43,13 @@ div.parent {
 #menu-bar a {
     text-decoration: none;
     color: #F4FA58;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 25px;
+    font-family: fontMenu;
+    font-size: 28px;
     font-weight: bold;
     text-shadow: 2px 2px 1px #1C1C1C;
     position: relative;
-    top: -45px;
-    left: 153px;
+    top: -42px;
+    left: 150px;
 }
 
 #menu-bar a.sub {
@@ -84,7 +104,7 @@ div.parent {
     height: 10px;
 }
 
-/******************************************/
+/*********************--- CONTENT ---*******************/
 
 #content {
     float: left;
@@ -97,13 +117,13 @@ div.parent {
 }
 
 #content h2 {
-    font-family: URW Chancery L, cursive;
+    font-family: fontDecor;
     font-size: 55px;
     text-align: center;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 100px;
+    padding-top: 70px;
     height: 150px;
     width: 500px;
 }
@@ -115,6 +135,9 @@ div.parent {
 
 #content div.middle {
     background: url(../images/middle.png) repeat-y;    
+    overflow: auto;
+    height: 500px;
+    font-family: fontContent;
 }
 
 #content div.middle p {
@@ -168,7 +191,7 @@ div.parent {
 }
 
 #content > div.middle a.switch {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-shadow: 2px 2px 1px black;
     color: yellow;
@@ -183,11 +206,50 @@ div.parent {
     text-decoration: underline;
 }
 
-/*************************************************/
+#content img.auteur {
+    margin: 30px 0 30px 200px;
+    box-shadow: 6px 6px 5px #585858;
+}
+
+#content img.doc {
+    margin: 20px 0 60px 125px;
+    box-shadow: 6px 6px 5px #585858;
+}
+
+#content img.propos {
+    width: 500px;
+    height: 300px;
+    margin: 50px 0 0 75px;
+    box-shadow: 6px 6px 5px #585858;
+}
+
+#content div.bottom p {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 27px;
+    font-family: fontFooter;
+    font-weight: bold;
+}
+
+#content div.middle p.propos {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/****************--- AUTRES DECORATIONS ---*************/
 
 img.decor {
     width: 396px;
     height: 63px;
     position: relative;
     z-index: 2;
+}
+
+#snow {
+    position: relative;
+    background: url(../images/SNOWFALL.gif) repeat;
+    height: 1200px;
+    background-size: 500px 800px;
 }

@@ -10,7 +10,7 @@ HuongThang
 
 *** LES PROJETS DE WEB :
 
-- Creer un site web qui presente le jeu Ping Pong programme par chaque groupe (dans le projet de C++)
+- Creer un site web qui presente le jeu Ping Pong programme par chaque groupe (dans le projet PingPong en C++ et SDL)
 
 =============================================================================================================
 Projet de Le Nguyen Minh Huong et de Tran Trung Thang

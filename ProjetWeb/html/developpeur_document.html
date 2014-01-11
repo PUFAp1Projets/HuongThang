@@ -5,67 +5,90 @@
   <head>
     <title>PROJET WEB DE HUONG & THANG</title>
     <link rel="stylesheet" type="text/css" href="../css/style-projet.css"/>
+    <meta charset="UTF-8">
   </head>
 
 
   <body>
-    <img class="decor" src="../images/lights1.gif"/>
-    <img class="decor" src="../images/lights1.gif"/>
-    <img class="decor" src="../images/lights1.gif"/>
-
-    <div id="menu-bar">
-
-      <div class="parent">
-	<img src="../images/button-menu1.png" class="first"/>
-	<a href="home.html" class="sub">ACCUEIL</a>
+    <div id="snow">
+      <div>
+	<img alt="decor" class="decor" src="../images/lights1.gif"/>
+	<img alt="decor" class="decor" src="../images/lights1.gif"/>
+	<img alt="decor" class="decor" src="../images/lights1.gif"/>
       </div>
 
-      <div class="parent">
-	<img src="../images/button-menu2.png"/>
-	<a href="developpeur.html">DEVELOPPEUR</a>
-	<div class="test1">
-	  <img src="../images/button-menu2.png"/>
-	  <a href="developpeur_huong.html">Auteurs</a>
-	  <img src="../images/button-menu2.png"/>
-	  <a href="developpeur_moyen.html">Moyens</a>
-	  <img src="../images/button-menu2.png"/>
-	  <a href="developpeur_document.html">Documents</a>
-	</div>
-      </div>
 
-      <div class="parent">
-	<img src="../images/button-menu3.png"/>
-	<a href="utilisateur.html">UTILISATEUR</a>
-	<div class="test2">
-	  <img src="../images/button-menu3.png"/>
-	  <a href="utilisateur_propos.html">A propos</a>
-	  <img src="../images/button-menu3.png"/>
-	  <a href="utilisateur_regle.html">Regles</a>
+      <div id="menu-bar">
+	<div class="parent">
+	  <img alt="menu" src="../images/button-menu1.png" class="first"/>
+	  <a href="home.html" class="sub">ACCUEIL</a>
 	</div>
+
+	<div class="parent">
+	  <img alt="menu" src="../images/button-menu2.png"/>
+	  <a href="developpeur.html">DEVELOPPEUR</a>
+	  <div class="test1">
+	    <img alt="menu" src="../images/button-menu2.png"/>
+	    <a href="developpeur_huong.html">Auteurs</a>
+	    <img alt="menu" src="../images/button-menu2.png"/>
+	    <a href="developpeur_moyen.html">Moyens</a>
+	    <img alt="menu" src="../images/button-menu2.png"/>
+	    <a href="developpeur_document.html">Documents</a>
+	  </div>
+	</div>
+
+	<div class="parent">
+	  <img alt="menu" src="../images/button-menu3.png"/>
+	  <a href="utilisateur.html">UTILISATEUR</a>
+	  <div class="test2">
+	    <img alt="menu" src="../images/button-menu3.png"/>
+	    <a href="utilisateur_propos.html">A propos</a>
+	    <img alt="menu" src="../images/button-menu3.png"/>
+	    <a href="utilisateur_regle.html">Regles</a>
+	  </div>
+	</div>
+	
+	<div class="parent">
+	  <img alt="menu" src="../images/button-menu6.png"/>
+	  <a href="telecharger.html">TELECHARGER</a>
+	</div>
+
       </div>
       
-      <div class="parent">
-	<img src="../images/button-menu6.png"/>
-	<a href="telecharger.html">TELECHARGER</a>
-      </div>
-
-    </div>
-    
-    
-    <div id="content">
-      <div class="upper">      
-	<h2>Les Documents a consulter,</h2>
-      </div>
-
-      <div class="middle">
-	<p><strong>LES DOCUMENTS DE REFERENCE A PROPOS DE L'UTILISATION DE SDL :</strong></p>
-	<p><strong>- Programming Linux Games,</strong> par Loki Sofware, Inc. et John R.Hall</p>
-	<p><strong>- SDL Game Development,</strong> par Shaun Ross Mitchell</p>
-      </div>
       
-      <div class="bottom">
-      </div>
+      <div id="content">
+	<div class="upper">      
+	  <h2>Les Documents a consulter,</h2>
+	</div>
 
+	<div class="middle">
+	  <p><strong>LES DOCUMENTS DE REFERENCE A PROPOS DE L'UTILISATION DE SDL :</strong></p>
+	  <p><strong>1) Programming Linux Games,</strong> par Loki Sofware, Inc. et John R.Hall</p>
+	  <p style="font-style: italic;">
+	    This is a complete guide to developing 2D Linux games, written by the Linux gaming experts. It discusses important multimedia toolkits (including a very thorough discussion of the Simple DirectMedia Layer) and teaches the basics of Linux game programming. Readers will learn about the state of the Linux gaming world, and how to write and distribute Linux games to the Linux gaming community. One should notice however, that this book doesn't discuss 3D game programming.
+	  </p>
+	  <p style="text-align: center;">Cliquez sur la couverture du livre pour le telecharger.</p>
+	  <a href="../document/games.pdf" download="programminglinuxgame.pdf"><img alt="doc" class="doc" width="400" src="../images/doc1.jpg"/></a>
+	  
+	  <p><strong>2) SDL Game Development,</strong> par Shaun Ross Mitchell</p>
+	  <p style="font-style: italic;">
+	    SDL 2.0 is the latest release of the popular Simple DirectMedia Layer API, which is designed to make life easier for C++ developers, allowing you simple low-level access to various multiplatform audio, graphics, and input devices. SDL Game Development guides you through creating your first 2D game using SDL and C++. It takes a clear and practical approach to SDL game development, ensuring that the focus remains on creating awesome games.
+	  </p>
+	  <p style="text-align: center;">Cliquez sur la couverture du livre pour le telecharger.</p>
+	  <a href="../document/SDL.pdf" download="SDL Game Development.pdf"><img alt="doc" class="doc" width="400" src="../images/doc2.jpg"/></a>
+
+	  <p><strong>3) SDL Library Documentation,</strong> redige par un groupe des auteurs.</p>
+	  <p style="font-style: italic;">
+	    SDLdoc (The SDL Documentation Project) was formed to completely rewrite the SDL documentation and to keep it continually up to date. The team consists completely of volunteers ranging from people working with SDL in their spare time to people who use SDL in their everyday working lives. The latest version of this documentation can always be found at the project homepage:
+	    http://sdldoc.sourceforge.net.
+	  </p> 
+	  <p style="text-align: center;">Cliquez <a href="../document/sdldoc.pdf" download="SDL Documentation">ici</a> pour le telecharger.</p>
+	</div>
+	
+	<div class="bottom">
+	  <p>Merry Christmas and Happy New Year</p>
+	</div>
+      </div>
     </div>
   </body>
 
